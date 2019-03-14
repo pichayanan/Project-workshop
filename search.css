@@ -26,9 +26,10 @@
     text-align: center;
     padding: 20px;
     font-size: 30px;
-    background-color: lightsalmon;
+    background-color: rgba(117, 124, 118, 0.486);
     border: 2px black;
     height: 90px;
+    
 
 }
 .item{
@@ -38,8 +39,8 @@
     
 }
 .game{
-    background-color:rgb(128, 145, 161);
+   background-color:rgba(21, 9, 43, 0.671);
     padding: 15 px;
-    
+    color: rgba(240, 255, 255, 0.534);
 
 }
