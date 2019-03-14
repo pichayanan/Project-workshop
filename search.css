@@ -18,7 +18,7 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    background-color: antiquewhite;
+    
     
     
 }
@@ -29,7 +29,7 @@
     background-color: rgba(117, 124, 118, 0.486);
     border: 2px black;
     height: 90px;
-    color: rgba(240, 255, 255, 0.534);
+   
 
 }
 .item{
