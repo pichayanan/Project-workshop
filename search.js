@@ -17,7 +17,7 @@ $(function(){
     $('#go').click(function() {
         
         $('#playAgain').show();
-        if(x==""&&s!=0){
+        if(x!=""&&s!=0){
         $('#go').hide();
         var x =$('#keyword').val();
         var s =$('#sex').val();
