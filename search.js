@@ -21,10 +21,19 @@ $(function(){
         var rdm2 = Math.floor(Math.random() *9);
         var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';
         
-        if(x!=""&&s!=0){
+    if(x!=""&&s!=0){
             $('#playAgain').show();
-        $('#go').hide();
+            $('#go').hide();
+        if(s==1){
+            photo1 = document.getElementById("pic");
+            photo1.setAttribute('src',smale[rdm1]);
+            $('#test1').text(result);
+        }else if (s==2){
+            photo1 = document.getElementById("pic");
+            photo1.setAttribute('src',sfemale[rdm2]);
+            $('#test1').text(result);
         }
+    }
     if(x==""){
         alert("กรุณากรอกชื่อของคุณ!!")
     }
@@ -32,14 +41,5 @@ $(function(){
         alert("กรุณาระบุเพศของคุณ!!")
     }
 
-    else if(s==1){
-        photo1 = document.getElementById("pic");
-        photo1.setAttribute('src',smale[rdm1]);
-        $('#test1').text(result);
-    }else if (s==2){
-        photo1 = document.getElementById("pic");
-        photo1.setAttribute('src',sfemale[rdm2]);
-        $('#test1').text(result);
-    }
 });
 });
