@@ -11,8 +11,10 @@ $(function(){
 'https://cdn.pixabay.com/photo/2018/11/23/16/51/zebra-3834241_960_720.jpg','https://lh3.googleusercontent.com/N6-cwmOEI68lQsohX8ayyjYEk9Y_tVvOHxLz3OwjCF6j1kOhVFk5drG7XgvTv9oAShY',
 'https://dok7xy59qfw9h.cloudfront.net/496/999/773/-19996983-201ggk8-j3a0fb525bc3995/original/avatar.jpg','https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg'
                  ,'https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_960_720.jpg','https://cdn.pixabay.com/photo/2014/10/01/10/44/hedgehog-468228_960_720.jpg'];
-
+$('#playAgain').hide();
 $('#go').click(function() {
+    $('#go').hide();
+    $('#playAgain').show();
     var x =$('#keyword').val();
     var s =$('#sex').val();
     var rdm1 = Math.floor(Math.random() *9);
