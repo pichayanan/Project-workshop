@@ -17,21 +17,20 @@ $(function(){
     $('#go').click(function() {
         
         $('#playAgain').show();
-        if(x!=""&&s!=0){
+    if(x!=""&&s!=0){
         $('#go').hide();
         var x =$('#keyword').val();
         var s =$('#sex').val();
         var rdm1 = Math.floor(Math.random() *9);
         var rdm2 = Math.floor(Math.random() *9);
-        var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';}
-    if(x==""){
+        var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';
+    }
+    else if(x==""){
         alert("กรุณากรอกชื่อของคุณ!!")
     }
-        if(s==0){
+    else if(s==0){
         alert("กรุณาระบุเพศของคุณ!!")
-    }
-
-    else if(s==1){
+    }else if(s==1){
         photo1 = document.getElementById("pic");
         photo1.setAttribute('src',smale[rdm1]);
         $('#test1').text(result);
@@ -42,3 +41,4 @@ $(function(){
     }
 });
 });
+
