@@ -47,8 +47,7 @@
 }
 .button {
         background-color: rgba(11, 54, 13, 0.247);
-        border:2px;
-        border-color:black;
+       border-bottom-color: black
         color: black;
         padding: 10px 25px;
         text-align: center;
