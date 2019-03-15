@@ -11,22 +11,27 @@ $(function(){
 'https://cdn.pixabay.com/photo/2018/11/23/16/51/zebra-3834241_960_720.jpg','https://lh3.googleusercontent.com/N6-cwmOEI68lQsohX8ayyjYEk9Y_tVvOHxLz3OwjCF6j1kOhVFk5drG7XgvTv9oAShY',
 'https://dok7xy59qfw9h.cloudfront.net/496/999/773/-19996983-201ggk8-j3a0fb525bc3995/original/avatar.jpg','https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg'
                  ,'https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_960_720.jpg','https://cdn.pixabay.com/photo/2014/10/01/10/44/hedgehog-468228_960_720.jpg'];
-$('#playAgain').hide();
-$('#go').click(function() {
-    $('#go').hide();
-    $('#playAgain').show();
-    var x =$('#keyword').val();
-    var s =$('#sex').val();
-    var rdm1 = Math.floor(Math.random() *9);
-    var rdm2 = Math.floor(Math.random() *9);
-    var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';
-    if(x<=0){
-alert("กรุณากรอกชื่อของคุณ!!")
-    }else if(s==0){
+
+    $('#playAgain').hide();
+    
+    $('#go').click(function() {
+        
+        $('#playAgain').show();
+        if(x==""&&s!=0){
+        $('#go').hide();
+        var x =$('#keyword').val();
+        var s =$('#sex').val();
+        var rdm1 = Math.floor(Math.random() *9);
+        var rdm2 = Math.floor(Math.random() *9);
+        var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';}
+    if(x==""){
+        alert("กรุณากรอกชื่อของคุณ!!")
+    }
+        if(s==0){
         alert("กรุณาระบุเพศของคุณ!!")
     }
 
-    if(s==1){
+    else if(s==1){
         photo1 = document.getElementById("pic");
         photo1.setAttribute('src',smale[rdm1]);
         $('#test1').text(result);
