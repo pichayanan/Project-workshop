@@ -46,9 +46,9 @@
 
 }
 .button {
-        background-color:rgba(22, 10, 43, 0.671);
+        background-color:white;
         border: none;
-        color: white;
+        color: black;
         padding: 10px 25px;
         text-align: center;
         text-decoration: none;
