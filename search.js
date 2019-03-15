@@ -15,16 +15,16 @@ $(function(){
     $('#playAgain').hide();
     
     $('#go').click(function() {
-        
-        
-        if(x!=""&&s!=0){
-            $('#playAgain').show();
-        $('#go').hide();
         var x =$('#keyword').val();
         var s =$('#sex').val();
         var rdm1 = Math.floor(Math.random() *9);
         var rdm2 = Math.floor(Math.random() *9);
-        var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';}
+        var result = 'สัตว์ที่คุณ '+x+' เคยเป็นคือ';
+        
+        if(x!=""&&s!=0){
+            $('#playAgain').show();
+        $('#go').hide();
+        }
     if(x==""){
         alert("กรุณากรอกชื่อของคุณ!!")
     }
@@ -43,4 +43,3 @@ $(function(){
     }
 });
 });
-
