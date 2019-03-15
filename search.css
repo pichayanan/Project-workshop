@@ -57,4 +57,4 @@
         margin: 4px 2px;
         cursor: pointer;
 }
-.button:hover {background-color: #e7e7e7;}
+.button:hover {background-color: rgba(75, 74, 80, 0.438);}
