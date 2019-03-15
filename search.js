@@ -34,10 +34,10 @@ $(function(){
             $('#test1').text(result);
         }
     }
-    if(x==""){
+    else if(x==""){
         alert("กรุณากรอกชื่อของคุณ!!");
     }
-        if(s==0){
+    else if(s==0){
         alert("กรุณาระบุเพศของคุณ!!");
     }console.log(x);
 
